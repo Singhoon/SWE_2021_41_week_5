@@ -1,0 +1,4 @@
+for alphafile in files/*; do
+    letter=$(basename "$alphafile" | cut -c1 | tr '[:lower:]' '[:upper:]')
+    mv "$alphafile" "$letter/"
+done
